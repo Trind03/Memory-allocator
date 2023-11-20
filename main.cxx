@@ -1,6 +1,6 @@
 /** 
- * Developed by Torstein and is a small side progect
- * 
+ * Small side project by Torstein
+ * Version 1.1
 */
 #include <iostream>
 #include <vector>
