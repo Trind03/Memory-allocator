@@ -7,6 +7,17 @@
 #include <string>
 
 
+void allicator()
+{
+    system("clear");
+    std::vector<int> gt1 = {};
+    std::cout << "Claiming stack memory...";
+
+    for (unsigned int i = 0; true; i++)
+    {gt1.push_back(i);}
+}
+
+
 int main()
 {
     char x = '0';
@@ -16,10 +27,10 @@ int main()
     switch (x)
     {
     case 'y':
-    flood();
+    allicator();
     break;
     case 'Y':
-    flood();
+    allicator();
     break;
     case 'n':
     std::terminate();
@@ -32,14 +43,3 @@ int main()
     }
     return 0;
 }
-
-void flood()
-{
-    system("clear");
-    std::vector<int> gt1 = {};
-    std::cout << "Claiming stack memory...";
-
-    for (unsigned int i = 0; true; i++)
-    {gt1.push_back(i);}
-}
-
