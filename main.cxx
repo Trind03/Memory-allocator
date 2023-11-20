@@ -1,20 +1,16 @@
+/** 
+ * Developed by Torstein and is a small side progect
+ * 
+*/
 #include <iostream>
 #include <vector>
 #include <string>
 
-void flood()
-{
-std::vector<int> gt1 = {};
-    system("clear");
-    std::cout << "Claiming stack memory...";
-    for (unsigned int i = 0; i != -1; i++)
-    {gt1.push_back(i);}
-}
 
 int main()
 {
     char x = '0';
-    std::cout << "Yea or Nah";
+    std::cout << "This software memory intensive, do you want to run it? ";
     std::cin >> x;
 
     switch (x)
@@ -36,3 +32,14 @@ int main()
     }
     return 0;
 }
+
+void flood()
+{
+    system("clear");
+    std::vector<int> gt1 = {};
+    std::cout << "Claiming stack memory...";
+
+    for (unsigned int i = 0; true; i++)
+    {gt1.push_back(i);}
+}
+
