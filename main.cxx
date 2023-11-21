@@ -6,6 +6,9 @@
 #include <vector>
 #include <string>
 
+#define Failed_Exit_Code 1
+#define Sucsess_Exit_Code 0
+
 
 void allicator()
 {
@@ -21,7 +24,7 @@ void allicator()
 int main()
 {
     char x = '0';
-    std::cout << "This software memory intensive, do you want to run it? ";
+    std::cout << "This software is memory intensive, do you want to run it? ";
     std::cin >> x;
 
     switch (x)
@@ -39,7 +42,8 @@ int main()
     std::terminate();
     break;
     default:
-        break;
+    std::cout << "Error invalid input, Process terminating...";
+        return Failed_Exit_Code;
     }
-    return 0;
+    return Sucsess_Exit_Code;
 }
