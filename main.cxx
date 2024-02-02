@@ -14,7 +14,7 @@ void allicator()
 {
     system("clear");
     std::vector<int> gt1 = {};
-    std::cout << "Claiming stack memory...";
+    std::cout << "Allocating memory";
 
     for (unsigned long long i = 0; true; i++)
     {gt1.push_back(i);}
